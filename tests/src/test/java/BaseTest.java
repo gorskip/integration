@@ -5,6 +5,6 @@ public class BaseTest {
 
     @Test
     public void test() {
-        Assert.assertEquals(this.getClass().getName(), "BaseTest X");
+        Assert.assertEquals(this.getClass().getName(), "BaseTest");
     }
 }
