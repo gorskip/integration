@@ -6,46 +6,46 @@ All tests: 6
 Tests passed: 50.0%
     # Test: Should have proper company name
         # Groups: name_script
-----------------------
+        ----------------------
         # Status: FAILURE
         # Parameters: facebook
         # Exception message: AssertionError: Company name facebook should contain "g"  expected [true] but found [false]
         # Instance: db.CompanyTest
         # Method: testName
-----------------------
-----------------------
+        ----------------------
+        ----------------------
         # Status: SUCCESS
         # Parameters: google
         # Instance: db.CompanyTest
         # Method: testName
-----------------------
-----------------------
+        ----------------------
+        ----------------------
         # Status: SUCCESS
         # Parameters: gft
         # Instance: db.CompanyTest
         # Method: testName
-----------------------
+        ----------------------
 ----------------------------------
     # Test: Should have proper number of employees
         # Groups: employees_script
-----------------------
+        ----------------------
         # Status: FAILURE
         # Parameters: 10000
         # Exception message: AssertionError: Number of employees 10000 should be less than 1500 expected [true] but found [false]
         # Instance: db.CompanyTest
         # Method: testEmployees
-----------------------
-----------------------
+        ----------------------
+        ----------------------
         # Status: FAILURE
         # Parameters: 2000
         # Exception message: AssertionError: Number of employees 2000 should be less than 1500 expected [true] but found [false]
         # Instance: db.CompanyTest
         # Method: testEmployees
-----------------------
-----------------------
+        ----------------------
+        ----------------------
         # Status: SUCCESS
         # Parameters: 1000
         # Instance: db.CompanyTest
         # Method: testEmployees
-----------------------
+        ----------------------
 ----------------------------------
