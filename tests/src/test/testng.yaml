@@ -1,0 +1,10 @@
+name: SingleSuite
+listeners:
+  - MyReport
+tests:
+  - name: Test Case 1
+    packages: [db.*]
+    includedGroups: [script_1]
+  - name: Test Case 2
+    packages: [db.*]
+    includedGroups: [script_2]
