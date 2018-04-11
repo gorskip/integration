@@ -27,17 +27,15 @@ public class PrintReport implements IReporter {
                 System.out.println("    # Test: " + test.getName());
                 System.out.println("        # Groups: " + joinArray(test.includedGroups()));
                 test.getTestCaseResults().forEach(testCase -> {
-                    System.out.println("        ----------------------");
-                    System.out.println("        # Status: " + testCase.getStatus());
-                    System.out.println("        # Parameters: " + joinArray(testCase.getParameters()));
+                    System.out.println("    |   ----------------------");
+                    System.out.println("    |   # Status: " + testCase.getStatus());
+                    System.out.println("    |   # Parameters: " + joinArray(testCase.getParameters()));
                     String exceptionMessage = testCase.getExceptionMessage();
                     if(!StringUtils.isEmpty(exceptionMessage)) {
-                        System.out.println("        # Exception message: " + testCase.getExceptionMessage());
+                        System.out.println("    |   # Exception message: " + testCase.getExceptionMessage());
                     }
-                    System.out.println("        # Instance: " + testCase.getInstanceName());
-                    System.out.println("        # Method: " + testCase.getMethodName());
-                    System.out.println("        ----------------------");
-
+                    System.out.println("    |   # Instance: " + testCase.getInstanceName());
+                    System.out.println("    |   # Method: " + testCase.getMethodName());
                 });
                 System.out.println("----------------------------------");
             });
