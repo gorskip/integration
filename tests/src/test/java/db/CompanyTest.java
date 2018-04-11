@@ -12,7 +12,7 @@ public class CompanyTest extends BaseTest{
 
     @Test(groups = {"employees_script"}, dataProvider = "employees")
     public void testEmployees(Integer value) {
-        Assert.assertTrue(value.intValue() < 1500, "Number of employees " + value + " should less than 1500");
+        Assert.assertTrue(value.intValue() < 1500, "Number of employees " + value + " should be less than 1500");
     }
 
 

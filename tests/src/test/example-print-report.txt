@@ -31,14 +31,16 @@ Tests passed: 50.0%
 ----------------------
         # Status: FAILURE
         # Parameters: 10000
-        # Exception message: AssertionError: Number of employees 10000 should less than 1500 expected [true] but found [false]
+        # Exception message: AssertionError: Number of employees 10000 should be less than 1500 expected [true] but found [fals
+e]
         # Instance: db.CompanyTest
         # Method: testEmployees
 ----------------------
 ----------------------
         # Status: FAILURE
         # Parameters: 2000
-        # Exception message: AssertionError: Number of employees 2000 should less than 1500 expected [true] but found [false]
+        # Exception message: AssertionError: Number of employees 2000 should be less than 1500 expected [true] but found [false
+]
         # Instance: db.CompanyTest
         # Method: testEmployees
 ----------------------
