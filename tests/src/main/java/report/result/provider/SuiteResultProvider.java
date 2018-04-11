@@ -28,6 +28,33 @@ public class SuiteResultProvider {
                         .map(entry -> testResultProvider.get(entry.getValue().getTestContext()))
                         .collect(Collectors.toList());
             }
+
+            @Override
+            public int passed() {
+                return Math.toIntExact(getTestsResults()
+                        .stream()
+                        .collect(Collectors.summarizingInt(testResult -> testResult.passed())).getSum());
+            }
+            @Override
+            public int failed() {
+                return Math.toIntExact(getTestsResults()
+                        .stream()
+                        .collect(Collectors.summarizingInt(testResult -> testResult.failed())).getSum());
+            }
+
+            @Override
+            public int skipped() {
+                return Math.toIntExact(getTestsResults()
+                        .stream()
+                        .collect(Collectors.summarizingInt(testResult -> testResult.skipped())).getSum());
+            }
+
+            @Override
+            public int allStatues() {
+                return passed() + failed() + skipped();
+            }
+
+
         };
     }
 }

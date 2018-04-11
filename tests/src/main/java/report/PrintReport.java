@@ -17,6 +17,12 @@ public class PrintReport implements IReporter {
         suites.forEach(suite -> {
             SuiteResult suiteResult = provider.get(suite);
             System.out.println("# Suite: " + suiteResult.getName());
+            System.out.println("Passed: " + suiteResult.passed());
+            System.out.println("Failed: " + suiteResult.failed());
+            System.out.println("Skipped: " + suiteResult.skipped());
+            System.out.println("All tests: " + suiteResult.allStatues());
+            double passedTests = Double.valueOf(suiteResult.passed()) / Double.valueOf(suiteResult.allStatues());
+            System.out.println("Tests passed: " + passedTests * 100 + "%");
             suiteResult.getTestsResults().forEach(test -> {
                 System.out.println("    # Test: " + test.getName());
                 System.out.println("        # Groups: " + joinArray(test.includedGroups()));

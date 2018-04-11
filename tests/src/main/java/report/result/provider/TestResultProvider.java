@@ -39,6 +39,21 @@ public class TestResultProvider {
                 testCaseResults.addAll(prepareTestCaseResults(skippedTests.getAllResults()));
                 return testCaseResults;
             }
+
+            @Override
+            public int passed() {
+                return iTestContext.getPassedTests().size();
+            }
+
+            @Override
+            public int failed() {
+                return iTestContext.getFailedTests().size();
+            }
+
+            @Override
+            public int skipped() {
+                return iTestContext.getSkippedTests().size();
+            }
         };
     }
 
