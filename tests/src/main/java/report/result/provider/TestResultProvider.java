@@ -1,9 +1,10 @@
-package report;
+package report.result.provider;
 
 import org.testng.IResultMap;
-import org.testng.ITest;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import report.result.TestCaseResult;
+import report.result.TestResult;
 
 import java.util.ArrayList;
 import java.util.Arrays;

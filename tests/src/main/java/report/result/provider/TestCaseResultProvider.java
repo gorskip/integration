@@ -1,7 +1,10 @@
-package report;
+package report.result.provider;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.testng.ITestResult;
+import report.result.Status;
+import report.result.StatusMapper;
+import report.result.TestCaseResult;
 
 import java.util.Arrays;
 import java.util.List;

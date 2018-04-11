@@ -1,9 +1,10 @@
-package report;
+package report.result.provider;
 
 import org.testng.ISuite;
 import org.testng.ISuiteResult;
+import report.result.SuiteResult;
+import report.result.TestResult;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;

@@ -1,4 +1,4 @@
-package report;
+package report.result;
 
 public class StatusMapper {
 

@@ -1,10 +1,10 @@
-name: SingleSuite
+name: Company Test Suite
 listeners:
-  - MyReport
+  - report.PrintReport
 tests:
-  - name: Test Case 1
+  - name: Should have proper company name
     packages: [db.*]
-    includedGroups: [script_1]
-  - name: Test Case 2
+    includedGroups: [name_script]
+  - name: Should have proper number of employees
     packages: [db.*]
-    includedGroups: [script_2]
+    includedGroups: [employees_script]
