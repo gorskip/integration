@@ -1,4 +1,9 @@
 # Suite: Company Test Suite
+Passed: 3
+Failed: 3
+Skipped: 0
+All tests: 6
+Tests passed: 50.0%
     # Test: Should have proper company name
         # Groups: name_script
 ----------------------
